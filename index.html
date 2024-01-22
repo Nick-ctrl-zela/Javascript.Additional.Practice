@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+
+function tempConverter(){
+  let tempFarhenheit = window.prompt('Please input a number');
+  let Celsius = Math.floor((tempFarhenheit - 32)*(5/9));
+  let tempKelvin = Math.floor(Celsius + 273.15);
+  let todaysForecast = `The current temperature outside is ${tempFarhenheit} degrees Fahrenheit, ${Celsius} degrees Celsius, and ${tempKelvin} Kelvin.`
+  return todaysForecast;
+}
+
+console.log(tempConverter());
+
+
+const firstName = "Nicholas"
+const lastName = "Zela"
+const myAge = 34
+const homeTown = "Simi Valley"
+const nameLength = firstName.length
+
+const myInitials = () => {
+  let firstInitial = firstName.slice(0,1);
+  let lastInitial = lastName.slice(0,1);
+  return firstInitial+lastInitial
+}
+
+console.log(nameLength);
+console.log(myInitials());
+console.log(`Hello! My name is ${firstName} ${lastName}! I'm ${myAge} years old, and I'm from ${homeTown}. It's nice to meet you!`);
+
+
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
