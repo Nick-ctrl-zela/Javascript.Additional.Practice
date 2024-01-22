@@ -42,12 +42,6 @@ let weatherReport = () => {
 console.log(weatherReport());
 
 const userName = "";
-let num1 = 5;
-let num2 = 3;
-let mathAdd = "add";
-let mathSub = "subtract";
-let mathDiv = "divide";
-let mathMul = "multiply";
 
 let newFunction = () => {
 if (userName == true){
@@ -60,8 +54,32 @@ else if (userName !== true){
 
 console.log(newFunction());
 
-// let mathFunction = () => {
-//   if ()
-// }
 
-console.log(num1, mathAdd, num2);
+let num1 = 31;
+let num2 = 17;
+let mathOp = window.prompt(`Please enter +, -, /, *, or %`);
+
+
+let mathFunction = () => {
+  if (mathOp === "+"){
+    return `Sum of ${num1} and ${num2} is ${num1 + num2}`
+  }
+  else if (mathOp === '-'){
+   return `Difference of ${num1} and ${num2} is ${num1 - num2}.`
+  }
+  else if (mathOp === '*'){
+    return `Product of ${num1} and ${num2} is ${num1 * num2}`
+  }
+  else if (mathOp === '/') {
+    return `Division of ${num1} and ${num2} is ${num1 / num2}.`
+  }
+  else if (mathOp === '%') {
+return `Modulus of ${num1} and ${num2} is ${num1 % num2}`
+  }
+  else {
+    return `${mathOp} is an invalid operation`
+  }
+}
+
+console.log(mathFunction());
+
